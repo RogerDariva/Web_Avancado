@@ -1,0 +1,40 @@
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+    float: left; /*Para ficar no mesmo fluxo do li e aparecer a formatação*/
+}
+
+ul li{
+    float: left;
+}
+
+ul a{
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../imagens/divisor.png) repeat-y left; /*Faz o papel da divisão entre as abas com imagem*/
+    /* border-left: 1px solid gray ;  -> Esse faria a mesma coisa que o de cima, porém, utilizaria borda*/    
+}
+
+ul .primeiro a{
+    background: none; /*Para não aparecer a divisão no primeiro item do menu*/
+}
+
+ul a:hover{
+    color: #085662;
+    background: #44cade;
+}
+
+#home .home,
+#sobre .sobre,
+#servicos .servicos,
+#contato .contato{
+    color: #085662;
+    background: #44cade;
+}
+
+
