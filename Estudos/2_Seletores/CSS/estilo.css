@@ -1,0 +1,33 @@
+/*Seletor de filho, nesse caso só será aplicada a formatação do elemento que
+estiver dentro do outro. Nesse caso, link dentro de li. Dessa forma, qualquer link
+filho de li sera formatado, os que estiverem fora não irão sofrer alteração*/
+
+li>a{
+    text-decoration: none;
+    color: red;
+}
+
+/*Seletor de descendente*/
+
+/*Nesse caso, independente se for filho direto, 
+todo link que estiver dentro da div sofrerá formatação*/
+
+div a{
+    text-decoration: none; 
+    color: green;
+}
+
+/*Seletor de irmão Adjacente*/
+
+/*Formata apenas o parágrafo logo após o h1*/
+h1 + p{ 
+    color: red; 
+}
+
+/*Seletor de irmão Adjacente*/
+
+/*Formata apenas o parágrafo logo após o h1*/
+h1 ~ p{ 
+    color: yellow; 
+}
+

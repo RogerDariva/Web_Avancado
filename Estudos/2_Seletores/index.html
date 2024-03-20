@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/estilo.css">
+    <title>Estudo de Seletores CSS</title>
+</head>
+
+<body>
+    <!--Seletores já estudados: *(página toda), h1,h2,h3,p (Seleciona o tipo do elemento)
+    .lateral (Seletor de classe), #menu (Seletor de id, utilização única) -->
+
+    <h2>Seletor de Filho</h2>
+    <ul>
+        <li>
+            <a href="">Home</a>
+        </li>
+        <li>
+            <span>
+                <a href="">Sobre</a> <!--Não sofre alteração porque é filho do span-->
+            </span> 
+        </li>
+    </ul>
+
+    <a href="">Teste</a> <!--Não sofre alteração porque não é filho do li-->
+
+
+    <h2>Seletor de descendente</h2>
+
+    <div>
+        <a href="">Teste 1</a>
+        <p>
+            <a href="">Teste 2</a> <!--Mesmo sendo filho direto do parágrafo, é descendente da div-->
+        </p>
+    </div>
+
+    <h2>Seletor de irmão Adjacente</h2>
+
+    <div>
+        <h1>Titulo</h1>
+        <p>Paragrafo 1</p> <!--Apenas esse será formatado(Vem logo após o h1)-->
+        <p>Paragrafo 2</p>
+    </div>
+
+    <h2>Seletor de irmão geral</h2>
+
+    <div>
+        <h1>Titulo</h1>
+        <p>Paragrafo 1</p> <!-- serão formatados Todos os que vierem após o h1-->
+        <p>Paragrafo 2</p>
+    </div>
+        
+
+
+</body>
+
+</html>
