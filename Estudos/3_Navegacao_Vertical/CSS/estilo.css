@@ -1,0 +1,38 @@
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul a{
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    display:block;
+    color: #000;
+    text-indent: 40px; /*Empurra o texto para a direita (Como se fosse indentação)*/
+    line-height: 40px; /*Define o tamanho da linha igual ao do link*/
+    text-decoration: none;
+    background: #f7b600 url(../imagens/menu.png) no-repeat ; /*A cor de fundo é para caso dê problema na imagem*/ 
+}
+
+/**Para a imagem mudar quando passar o mouse, no caso, irá ser empurrada para esquerda e irá
+aparecer a parte direita.**/
+
+a:hover { /*Poderia aplicar também no hover uma classe ".selecionado a" Assim marcaria a página que tiver a classe aplicada.*/
+    background-position: right bottom; 
+    background-color: #f99200; /*Para o caso de a imagem não carregar*/
+    color: #fff ; /*Link ficar branco quando estiver o mouse em cima*/
+}
+
+
+/*Dessa forma de seleção, a página que tiver o id especificado no body, terá
+as formatações aplicadas no link onde estiver a classe de nome especificado.*/
+#home .home a,
+#sobre .sobre a,
+#servicos .servicos a,
+#contato .contato a {
+    background-position: right bottom; 
+    background-color: #f99200; 
+    color: #fff ;
+}
