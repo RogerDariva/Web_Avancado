@@ -1,0 +1,39 @@
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+/*A aba funciona como a junção de duas imagens, com as pontas superiores
+arrendondadas. Dessa forma, posicionamos a aba direita depois a esquerda.*/
+ul li{
+    float: left;
+    background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a{
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(../imagens/aba-esquerda.png) no-repeat ;
+    color: white;
+}
+
+li a:hover{
+    color: #894a1f;
+}
+
+/*Mesmo padrão de menu, para mostrar em qual aba se encontra.*/
+ul #atual{
+    background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a{
+    background: url(../imagens/aba-esquerda-atual.png) no-repeat;
+}
