@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    width: 80%;
+    margin: auto;
+    min-width: 700px;
+}
+
+h1{
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    background-color: lightgray;
+    width: 20%;
+    height: 130px;
+    margin-top: 0;
+    padding: 30px;
+    text-align: center;
+    float: left;
+}
+
+li{
+    padding: 5px;
+}
+
+li a{
+    text-decoration: none;  
+}
+
+.conteudos{
+    width: 100%;
+}
+
+.conteudo-principal{
+    width: 49%;
+    float: left;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.conteudo-secundario{
+    float: right;
+    width: 22% ;
+    text-align: center;
+    background-color: lightgray;
+    margin-top: 0;
+}
+
+#rodape{
+    clear: both;
+    background-color: gray;
+    padding: 1px;
+    text-align: center;
+    margin: 0;
+}
