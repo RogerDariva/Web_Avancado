@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Formulários</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+    <h2>Estilizando Formulários</h2>
+    <div class="formulario">
+        <form action="">
+
+            <fieldset> <!--Agrupa campos semelhantes, ex: DADOS PESSOAIS-->
+                <legend>Detalhes de Contato</legend> <!--Legenda do fieldset, fica no topo-->
+
+                <div>
+                    <label for="nome">Nome</label> <!--Importante o for ser igual ao id-->
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="email">Email</label> <!--Importante o for ser igual ao id-->
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label for="url">URL</label> <!--Importante o for ser igual ao id-->
+                    <input type="text" name="url" id="url">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Comentários</legend>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="50" rows="5"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Lembrar de mim</legend>
+
+                <div>
+                    <label class="radio" for="sim">Sim</label>
+                    <input type="radio" id="sim" name="lembrar">
+                </div>
+
+                <div>
+                    <label class="radio" for="nao">Não</label>
+                    <input type="radio" id="nao" name="lembrar">
+                </div>
+            </fieldset>
+    
+        </form>
+    </div>   
+
+</body>
+
+</html>

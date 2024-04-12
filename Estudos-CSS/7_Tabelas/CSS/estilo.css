@@ -1,0 +1,38 @@
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+}
+#produtos{
+    width: 50%;
+    /*text-align: center; Por convenção, alinha-se a esquerda*/
+    position: relative;
+    margin: 50px auto;
+    border-collapse: separate ; /*collapse : Junta todas as bordas*/
+}
+
+th, td{
+    padding: 7px;
+    text-align: left;
+}
+
+th{
+    text-transform: uppercase; /*Tudo fica maiúscula*/
+    border-top: 1px solid #999 ;
+    border-bottom: 1px solid #111 ;
+    font-size: 90%;
+    letter-spacing: 0.1em; /*Espaçamento entre letras*/
+}
+
+tr.alternado{
+    background-color: #efefef; /*Para alternar a cor entre as linhas*/
+}
+
+tr:hover{
+    background-color: #c3c3e5;
+}
+
+.numero{
+    text-align: right; /*Por convenção, alinha-se a direita para ocasiões de números maiores*/
+}

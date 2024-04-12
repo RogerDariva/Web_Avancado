@@ -1,0 +1,38 @@
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.formulario{
+    width: 40%;
+}
+
+fieldset{
+    padding: 1em;
+    margin: 1em 0;
+    border:1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display: block;
+    cursor: pointer; /*Vira uma mão para clicar*/
+}
+
+input[type="text"]{ /*Apenas os input que tem o type=text serão estilizados*/
+    width: 25em;
+}
+
+textarea{
+    margin-top: 5px;
+    width: 25em;
+    height: 5em;
+}
+
+.radio{
+    display: inline;
+    
+}
