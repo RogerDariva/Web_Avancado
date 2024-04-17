@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: white url(../imagens/fundo.png) repeat-x;
+}
+
+.container{
+    width: 750px;
+    margin: 0 auto;
+    
+}
+
+#topo{
+    margin: 0;
+    height: 175px;
+    background: url(../imagens/detalhe-topo.png) no-repeat right top;
+}
+
+.logo{
+    padding-top: 50px;
+    width: 152px;
+    height: 66px;
+    background: url(../imagens/logo.png) no-repeat center;
+    text-indent: -800px; /*Para esconder o texto dentro do h1 "Noticias cidade"*/
+}
+
+ul{ /*Formatando todas as ul da pagina*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul{ /*Formatando a ul que está dentro da div topo*/
+    margin-top: 15px;
+   /* margin-left: 15px; -> Se quisesse afastar um pouco a barra da margem esquerda */
+    background: #bd1d11;
+    float: left; /*Para não perder o background ao aplicar o float no li*/
+}
+
+#topo ul li{ /*Todos os itens da lista*/
+    float: left; /*Para ficarem todos lado a lado*/
+}
+
+#topo ul li a{ /*Todos os links da lista*/
+    display: block; /*Sempre usar dessa forma para menu*/
+    font-size: 0.9em;
+    padding: 7px 20px; /*Espaçar os itens para fazer o menu*/
+    text-decoration: none;
+    color: #fff;
+    background: url(../imagens/divisor.png) repeat-y left center;
+}
+
+#topo ul .primeiro a{
+    background: none; /*Remove o divisor do primeiro item*/
+}
+
+#topo ul li a:hover{
+    color: #662727; /*Quando passar o mouse por cima do link*/
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,        /*Para marcar o no menu em qual aba está*/
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos
+{
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+#conteudo{
+    background: #f5f5f5;
+    margin-top: 60px;
+
+}
+
+/*é importante que o conteúdo principal venha primeiro no html, por isso temos que adequar
+o posicionamento aqui no css. Poderia ter usado apenas o float left, porém, a ordem ficaria
+errada, levando em conta que o primário vem antes no html mas deve ficar no centro.*/
+#primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px; /*Tivemos que adequar para colocar na ordem certa*/
+    background-color: blue;
+}
+
+#secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+    background-color: green;
+}
+
+#lateral{
+    width: 180px;
+    margin: 0 0 20px -750px;
+    float: left;
+    background-color: red;
+}
+
+#container-rodape{
+    clear: both; /*Para voltar a aparecer o fundo cinza do conteúdo e voltar ao display padrão*/
+    background-color:#163673 ;
+}
+
+#rodape{
+    color: #fff;
+    margin: 0 auto;
+    width: 750px;
+    padding: 15px;
+}
