@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif;
     background: white url(../imagens/fundo.png) repeat-x;
 }
 
@@ -81,29 +81,145 @@ body.fotos #navegacao a#fotos
 
 }
 
+#lateral{
+    width: 180px;
+    margin: 0 0 20px -750px;
+    float: left;
+}
+
 /*é importante que o conteúdo principal venha primeiro no html, por isso temos que adequar
 o posicionamento aqui no css. Poderia ter usado apenas o float left, porém, a ordem ficaria
 errada, levando em conta que o primário vem antes no html mas deve ficar no centro.*/
-#primario{
+
+#primario{ /*Se refere a 3 colunas*/
     width: 270px;
     float: left;
     margin: 0 0 20px 195px; /*Tivemos que adequar para colocar na ordem certa*/
-    background-color: blue;
+}
+
+#duas-colunas #primario{ /*Vai manter os padrões do primário acima, muda apenas o width*/
+    width: 555px;
+}
+
+#uma-coluna #primario{ /*Mantém os mesmos padrões, muda o width e margin*/
+    width: 750px;
+    margin: 0 0 20px 0; /*Tivemos que adequar para colocar na ordem certa*/
 }
 
 #secundario{
     width: 270px;
     float: left;
-    margin: 0 0 20px 15px;
-    background-color: green;
+    margin: 0 0 20px 15px;;
 }
 
-#lateral{
-    width: 180px;
-    margin: 0 0 20px -750px;
-    float: left;
-    background-color: red;
+
+
+.caixa{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #f3f3f3 url(../imagens/fundo-caixa.png);
+    padding: 5px;
 }
+
+h2{
+    font-size: 1em;
+    background: #163673;
+    color: #fff;
+    padding: 5px;
+}
+
+h3{
+    background-color: #b10333;
+    color: #fff;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #f3f3f3; /*Para dar uma separação entre cada um*/
+}
+
+#lateral ul a:hover{
+    padding-left: 20px; /*Para o marcador caber certinho*/
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center ;
+    color: #a1a1a1;
+}
+
+img{
+    border: 2px solid #dfdfdf;
+}
+
+img.destaque{
+    width: 98%;
+}
+
+ /*Formulário*/
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input{
+    font-size: 0.9em;
+    background-color: #fff;
+    width:150px ;
+    padding: 5px;
+    margin-top: 5px ;
+}
+
+input.submit{
+    width: 80px;
+    color: white;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    cursor: pointer;
+}
+
+/*Lista de noticias*/
+
+#listagem-noticias li{
+    height: 70px;
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+}
+
+#listagem-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+#listagem-noticias li a{
+    text-decoration: none;
+}
+
+#listagem-noticias li a p{
+    font-size: 0.8em;
+    color: black;
+}
+
+#listagem-noticias li a h5{
+    margin-top: 5px;
+    color: #688df2;
+    text-transform: uppercase;
+}
+
+
+
+/*Rodapé*/
 
 #container-rodape{
     clear: both; /*Para voltar a aparecer o fundo cinza do conteúdo e voltar ao display padrão*/
